@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premalu</title>
+    <link rel="icon" href="https://webstockreview.net/images/film-clipart-royalty-free-1.jpg">
+    <style>
+        *{
+            background-color: black;
+        }
+        .back{
+            transition-duration: 1s;
+            font-size: 25px;
+            cursor: pointer;
+            box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+        }
+       .back:hover{
+        transform:scale(1.3);
+        z-index:2;
+        filter: drop-shadow(5px 5px 8px orangered);
+        }
+        .LR{
+            display: flex;
+            overflow-x: auto;
+            }
+        .LR::-webkit-scrollbar{
+            width: 0px;
+            }
+        div.LR img {
+           padding: 10px;
+           }
+           .pho{
+            padding-right: 30px;
+            width: 400px;
+            height: 400px;
+            transition-duration: 1s;
+            cursor: pointer;
+            box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+            }
+       .pho:hover{
+            transform:scale(1.1);
+            z-index:2;
+        }
+        .con{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 15px;
+        }
+    </style>
+<Script>
+    function back(){
+        window.location.href="../Malayalam.html"
+    }
+</Script>
+</head>
+<body>
+<button onclick="back()"><h1 class="back" style="color: aliceblue;">⬅Back</h1></button>
+    <div class="con">
+        <center>
+            <iframe width="2060" height="760" src="https://www.youtube.com/embed/rIrGi2NauIo?si=-8vtprlMqqIjeLz2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </center>
+        <div class="LR">
+            <div class="pho"><a href="https://youtu.be/C9q9lh9w-XI?feature=shared"> <img class="pho" src="../MMIm/hirdhayam.jpg" alt="hirdhayam"></a></div>
+            <div class="pho"><a href="https://youtu.be/xEuRPDECjnk?feature=shared"><img class="pho" src="../MMIm/kali.jpg" alt="kali"></a></div>
+            <div class="pho"><a href="https://youtu.be/ItNWV6eHYPI?feature=shared"><img class="pho" src="../MMIm/vikramadhi.jpg" alt="Premam"></a></div>
+            <div class="pho"><a href="https://youtu.be/yjaFvFuQ-QM?feature=shared"><img class="pho" src="../MMIm/premam.jpg" alt="Premam"></a></div>
+            <div class="pho"><a href="https://youtu.be/kAcw55mzw2Y?feature=shared"><img class="pho" src="../MMIm/mayanadhi..jpg" alt="Mayanadhi"></a></div>
+    </div>
+    </div>
+</body>
+</html>

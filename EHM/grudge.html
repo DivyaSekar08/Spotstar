@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grudge</title>
+    <link rel="icon" href="https://webstockreview.net/images/film-clipart-royalty-free-1.jpg">
+    <style>
+        *{
+            background-color: black;
+        }
+        .back{
+            transition-duration: 1s;
+            font-size: 25px;
+            cursor: pointer;
+            box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+        }
+       .back:hover{
+        transform:scale(1.3);
+        z-index:2;
+        filter: drop-shadow(5px 5px 8px orangered);
+        }
+        .LR{
+            display: flex;
+            overflow-x: auto;
+            }
+        .LR::-webkit-scrollbar{
+            width: 0px;
+            }
+        div.LR img {
+           padding: 10px;
+           }
+           .pho{
+            padding-right: 30px;
+            width: 400px;
+            height: 400px;
+            transition-duration: 1s;
+            cursor: pointer;
+            box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+            }
+       .pho:hover{
+         
+            transform:scale(1.1);
+            z-index:2;
+            }
+        .con{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 15px;
+        }
+        h1{
+            color:plum;
+        }
+    </style>
+<Script>
+    function back(){
+        window.location.href="../eng.html"
+    }
+</Script>
+</head>
+<body>
+<button onclick="back()"><h1 class="back" style="color: aliceblue;">⬅Back</h1></button>
+    <div class="con">
+        <center>
+            <iframe width="2060" height="760" src="https://www.youtube.com/embed/zJEZ4HATkqg?si=iWmGniAY9er_aTEO" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </center>
+        <marquee behavior="slid" direction="left" scrollamount="10">
+            <h1>You May Also Like....</h1>
+        </marquee>
+        <div class="LR">
+            <div class="pho"><a href="https://youtu.be/atnW4D6pc-w?feature=shared"> <img class="pho" src="../Eim/conjuring.jpg" alt="conjuring"></a></div>
+            <div class="pho"><a href="https://youtu.be/eMtjnHTull4?feature=shared"><img class="pho" src="../Eim/the mare.jpg" alt="The Mary"></a></div>
+            <div class="pho"><a href="https://youtu.be/YqP0OjXrCmc?feature=shared"><img class="pho" src="../Eim/nun.jpg" alt="The Nun"></a></div>
+            <div class="pho"><a href="https://youtu.be/XimvdthKNas?feature=shared"><img class="pho" src="../Eim/wrong house.jpg" alt="the wrong house"></a></div>
+            <div class="pho"><a href="https://youtu.be/rGsXo6cjKyE?feature=shared"><img class="pho" src="../Eim/house of dead.jpg" alt="House of Dead"></a></div>
+    </div>
+    </div>
+</body>
+</html>

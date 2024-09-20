@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="icon" href="https://icon-library.com/images/movies-icon-png/movies-icon-png-29.jpg">
+    <link rel="stylesheet" href="Movies.css">
+    <script>
+        function movies(){
+                var choice = document.getElementById("sp").value
+                if (choice=='Tamil'){
+                        window.location.href="http://127.0.0.1:5501/Movies.html"
+                }
+                else if (choice=='English'){
+                         window.location.href="http://127.0.0.1:5501/English/eng.html"
+                }
+                else if (choice=='Malayalam'){
+                        window.location.href="http://127.0.0.1:5501/Malayalam/Malayalam.html"
+                }
+        }
+        function back(){
+                window.location.href="./Welcome.html"
+        }
+    </script>
+</head>
+<body>
+<div>
+        <div style="display: flex;justify-content: space-between;margin-top: 15px;">
+                <div onclick="back()" class="back" style="display: flex;flex-wrap: wrap;justify-content: space-around;">
+                        <h1 class="back" style="color: aliceblue;">⬅Back</h1>
+                    </div>
+                    <div>
+                        <select id="sp" onchange="movies()">
+                                <option>Tamil</option>
+                                <option>English</option>
+                                <option>Malayalam</option>
+                        </select>
+                    </div>
+        </div>
+    <h1>Latest Releases</h1>
+    <div class="LR">
+            <div class="pho"><a href="Movies/LR/Kalki.html"><img class="pho" src="images/Kalki.jpg" alt="Kalki" ></a></div>
+            <div class="pho"><a href="Movies/LR/vazhai.html"><img class="pho" src="images/vazhai.jpg" alt="vazhai" ></a></div>
+            <div class="pho"><a href="Movies/LR/Demonty.html"><img class="pho" src="images/Demonty.jpg" alt="Demonty Colony"></a></div>
+            <div class="pho"><a href="Movies/LR/Raayan.html"><img class="pho" src="images/Raayan.jpg" alt="Raayan"></a></div>
+            <div class="pho"><a href="Movies/LR/Indian.html"><img class="pho" src="images/Indian.jpg" alt="Indian 2"></a></div>
+    </div>
+    <h1>Non Fiction Shows</h1>
+    <div class="NF">
+            <div class="pho"><a href="Movies/NF/kpy.html"><img class="pho" src="images/KPY.jpg" alt="KPy"></a></div>
+            <div class="pho"><a href="Movies/NF/Neya.html"><img class="pho" src="images/neya.jpg" alt="Neya Nana"></a></div>
+            <div class="pho"><a href="Movies/NF/SuS.html"><img class="pho" src="images/SM.jpg" alt="Start Music"></a></div>
+            <div class="pho"><a href="Movies/NF/Adhu.html"><img class="pho" src="images/Adhu.jpg" alt="Adhu idhu edhu"></a></div>
+            <div class="pho"><a href="Movies/NF/CWC.html"><img class="pho" src="images/CWC.jpg" alt="CWC"></a></div>
+    </div>
+    <h1>Fiction Shows</h1>
+    <div class="FF">
+            <div class="pho"><a href="Movies/FS/Sakthivel.html"><img class="pho" src="images/Sakthivel.jpg" alt="Sakthivel"></a></div>
+            <div class="pho"><a href="Movies/FS/Backiya.html"><img class="pho" src="images/Bakiya.jpg" alt="Backiyalaxmi"></a></div>
+            <div class="pho"><a href="Movies/FS/PVM.html"><img class="pho" src="images/pani.jpg" alt="Pani vizhum malar vanam"></a></div>
+            <div class="pho"><a href="Movies/FS/Raja Rani.html"><img class="pho" src="images/raja.png" alt="Raja Rani"></a></div>
+            <div class="pho"><a href="Movies/FS/Mahanadhi.html"><img class="pho" src="images/maha.jpg" alt="Mahanadhi"></a></div>
+    </div>
+    <h1>SpotStar Specials</h1>
+    <div class="SS">
+            <div class="pho"><a href="Movies/SS/My.html"><img class="pho" src="images/My.jpg" alt="My Perfect Husband"></a></div>
+            <div class="pho"><a href="Movies/SS/upk.html"><img class="pho" src="images/upk.jpg" alt="upk"></a></div>
+            <div class="pho"><a href="Movies/SS/HB.html"><img class="pho" src="images/HB.jpg" alt="HB"></a></div>
+            <div class="pho"><a href="Movies/SS/cs.html"><img class="pho" src="images/cs.jpg" alt="cs"></a></div>
+            <div class="pho"><a href="Movies/SS/NS.html"><img class="pho" src="images/NS.jpg" alt="NS"></a></div>
+    </div>
+    <h1>Clasic Love Story</h1>
+    <div class="CLS">
+            <div class="pho"><a href="Movies/CLS/sita.html"> <img class="pho" src="images/sita.jpg" alt="Sita Raman"></a></div>
+            <div class="pho"><a href="Movies/CLS/KKP.html"><img class="pho" src="images/KKP.jpg" alt="KKP"></a></div>
+            <div class="pho"><a href="Movies/CLS/iruga.html"><img class="pho" src="images/iruga.jpg" alt="Irugapattru"></a></div>
+            <div class="pho"><a href="Movies/CLS/GN.html"><img class="pho" src="images/GN.jpg" alt="Good Night"></a></div>
+            <div class="pho"><a href="Movies/CLS/hi.html"><img class="pho" src="images/hi.jpeg" alt="Hi Nana"></a></div>
+    </div>
+    <h1>Horror Movies</h1>
+    <div class="HM">
+            <div class="pho"><a href="Movies/HM/Connect.html"><img class="pho" src="images/Connect.jpg" alt="Connect"></a></div>
+            <div class="pho"><a href="Movies/HM/Aran3.html"><img class="pho" src="images/Aran3.jpg" alt="Aranmanai 3"></a></div>
+            <div class="pho"><a href="Movies/HM/YN.html"><img class="pho" src="images/YN.jpg" alt="Yavarum Nalam"></a></div>
+            <div class="pho"><a href="Movies/HM/Arundathi.html"><img class="pho" src="images/Arunda.jpg" alt="Kalki"></a></div>
+            <div class="pho"><a href="Movies/HM/Pisa.html"><img class="pho" src="images/Pisa.jpg" alt="Kalki"></a></div>
+    </div>
+    <h1>Popular in Comedy</h1>
+    <div class="CM">
+            <div class="pho"><a href="Movies/Comedy/Panch.html"><img class="pho" src="images/Panch.jpg" alt="panchathanthiram"></a></div>
+            <div class="pho"><a href="Movies/Comedy/idiot.html"><img class="pho" src="images/idiot.jpg" alt="idiot"></a></div>
+            <div class="pho"><a href="Movies/Comedy/tamil.html"><img class="pho" src="images/tamil.jpg" alt="tamil"></a></div>
+            <div class="pho"><a href="Movies/Comedy/kala.html"><img class="pho" src="images/kala.jpg" alt="kalakalappu" ></a></div>
+            <div class="pho"><a href="Movies/Comedy/valla.html"><img class="pho" src="images/valla.jpg" alt="valavanukum pulum ayudham"></a></div>
+    </div>
+    <h1>Disney Movies</h1>
+    <div class="DM">
+            <div class="pho"><a href="Movies/Disney/GD.html"><img class="pho" src="images/GD.jpg" alt="Good dinosaur"></a></div>
+            <div class="pho"><a href="Movies/Disney/toy.html"><img class="pho" src="images/toy.jpg" alt="Toy Story"></a></div>
+            <div class="pho"><a href="Movies/Disney/tangled.html"><img class="pho" src="images/snow.jpg" alt="Tangled"></a></div>
+            <div class="pho"><a href="Movies/Disney/Smurfs.html"><img class="pho" src="images/smu.jpg" alt="Smurfs"></a></div>
+            <div class="pho"><a href="Movies/Disney/baby.html"><img class="pho" src="images/baby.jpeg" alt="Baby Boss"></a></div>
+    </div>
+</div>
+</body>
+</html>

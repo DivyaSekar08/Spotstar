@@ -1,0 +1,77 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+.back{
+    transition-duration: 1s;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+}
+.back:hover{
+transform:scale(1.3);
+z-index:2;
+filter: drop-shadow(5px 5px 8px orangered);
+}
+body{
+    background-color: black;
+}
+h1{
+    color: plum;
+    font-size: 40px;
+}
+.pho{
+    padding-right: 30px;
+    width: 400px;
+    height: 400px;
+    transition:1s;
+    cursor: pointer;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+}
+.pho:hover{
+    transform:scale(1.1);
+    z-index:2;
+}
+.Mdi{
+   display: flex;
+   overflow-x: auto;
+}
+.Mdi::-webkit-scrollbar{
+        width: 0px;
+}
+div.Mdi img {
+    padding: 10px;
+}
+.HHS{
+    display: flex;
+    overflow-x: auto;
+ }
+ .HHS::-webkit-scrollbar{
+         width: 0px;
+ }
+div.HHS img {
+     padding: 10px;
+ }
+ .LHS{
+    display: flex;
+    overflow-x: auto;
+ }
+ .LHS::-webkit-scrollbar{
+         width: 0px;
+ }
+div.LHS img {
+     padding: 10px;
+ }
+ #sp{
+    display: inline-block;
+    margin-left: 1650px;
+    height: 25px;
+    width: 150px;
+    color: plum;
+    background-color: black;
+    font-size: 20px;
+}
+
+ 

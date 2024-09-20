@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotStar</title>
+    <link rel="icon" href="https://questmite.com/wp-content/uploads/2022/08/Music-in-movies.webp">
+    <style>
+        *{
+            background-color: black;
+            color: plum;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+     .potp{
+        border: solid 1px gray; 
+    height: 600px;
+    width: 400px; 
+    margin-top: 100px;
+    border-radius: 15px;
+    background-color:black;
+        }
+        .bu{
+            margin-bottom: 50px;
+    width: 250px;
+    height: 37px;
+    font-size: 18px;
+    cursor: pointer;
+    color: whitesmoke;
+    border-radius:20px ;
+    border: none;
+      }
+    </style>
+     <script>
+        var GeneratedOTP=Math.floor(Math.random()*999999)
+        alert(GeneratedOTP)
+        function OTPVerification(){
+            var EnteredOTP=document.getElementById("otp").value 
+            if(GeneratedOTP==EnteredOTP){
+                window.location.href="./password.html"
+            }else{
+                document.getElementById("error").innerHTML="Incorrect OTP"
+            }
+        }
+        function ResendOTP(){
+            window.location.href="./POTP Verification.html"
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <div class="potp">
+            <em><h1 style="color: blueviolet;">SpotStar</h1></em>
+            <br><br><br>
+            <input id="otp" style="height: 35px; width: 250px; font-size: 20px;" type="text" placeholder="Enter The OTP" style="font-size: 18px;">
+            <br><br><br><br>
+            <button style="background-color: rgb(197, 45, 197); width: 150px;" onclick="OTPVerification()" class="bu">Verify</button> 
+            <p itemref="error"></p>
+               
+        <h4 style="font-size: 23px;">Resend OTP</h4>
+        <input style="background-color: rgb(197, 45, 197);" onclick="ResendOTP()" class="bu" type="button" value="Register">
+    </div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>SpotStar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://questmite.com/wp-content/uploads/2022/08/Music-in-movies.webp">
+    <style>
+        *{
+            background-color: black;
+            color: plum;
+        }
+        .login{
+    border: solid 1px gray; 
+    height: 600px;
+    width: 400px; 
+    margin-top: 100px;
+    border-radius: 15px;
+    background-color:black;
+         }
+        .bu{
+            margin-bottom: 50px;
+    width: 250px;
+    height: 37px;
+    font-size: 18px;
+    cursor: pointer;
+    color: whitesmoke;
+    border-radius:20px ;
+    border: none;
+      }
+      
+      a{
+        text-decoration: none;
+        color: plum;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+        function register(){
+            window.location.href="./SignUp.html"
+        }
+        function verify(){
+            window.location.href="./POTP Verification.html"
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <div class="login">
+        <em><h1 style="color: blueviolet;  font-size: 35px;">SpotStar</h1></em>
+        <br> <br>
+                <input style="height: 35px; width: 250px; font-size: 20px;" type="text" placeholder="Phone/Email" style="font-size: 18px;"></td>
+                <br><br><br>
+               <button style="background-color: rgb(197, 45, 197); width: 150px;" onclick="verify()" class="bu">Send OTP</button>            
+                <h4 style="font-size: 23px;">Don't have an account?</h4>
+               <input style="background-color: rgb(197, 45, 197);" onclick="register()" class="bu" type="button" value="Register">
+            
+        
+    </div>
+</center>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <title>SpotStar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://questmite.com/wp-content/uploads/2022/08/Music-in-movies.webp">
+    <style>
+        *{
+            background-color: black;
+            color: plum;
+        }
+        .login{
+    border: solid 1px gray; 
+    height: 600px;
+    width: 400px; 
+    margin-top: 100px;
+    border-radius: 15px;
+    background-color: black;
+         }
+        .bu{
+    border-radius: 20px;
+    width: 250px;
+    height: 37px;
+    font-size: 18px;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: rgb(197, 45, 197);
+    border: none;
+      }
+      h4:hover{
+        cursor: pointer;
+      }
+    </style>
+    <script>
+        function check(){
+            var username=document.getElementById("Username").value;
+            var Password=document.getElementById("pass").value;
+            var data=[{'userN':'Divya_08','Passwordd':'Divya@08'},{'userN':'Tharun_05','Passwordd':'Tharun@05'},{'userN':'Pavan_28','Passwordd':'Paavan@28'},{'userN':'Sandhiya_27','Passwordd':'Sandhiya@27'},{'userN':'Suba_22','Passwordd':'Suba@22'}]
+            var flag=false
+            let userN
+            let Passwordd
+       for(var i=0;i<data.length;i++){
+        if(data[i]['userN']==username){
+            if(data[i]['Passwordd']==Password){
+                flag=true
+            }
+        }
+       }
+       if(flag==true){
+        window.location.href="./Welcome.html"
+        alert("Login Succesfully")
+       }
+       else{
+        alert("invalid")
+       }
+        }
+        function Forget(){
+            window.location.href="./forget.html"
+        }
+        function regis(){
+            window.location.href="./SignUp.html"
+        }
+       
+    </script>
+</head>
+<body>
+    <center>
+    <div class="login">
+        <em><h1 style="color: blueviolet; font-size: 35px;">SpotStar</h1></em>
+        <br> <br>
+        <form>
+            <table>
+                <tr>
+                    <td style="font-size: 23px;">Username:</td>
+                    <td><input id="Username" type="text" placeholder="Username" style="font-size: 18px;"></td>
+                    <td><i class="fa fa-user" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 23px;">Password:</td>
+                    <td><input id="pass" type="text" placeholder="Password" style="font-size: 18px;"></td>
+                    <td><i class="fa fa-key" aria-hidden="true"></i></td>
+                </tr>
+            </table>
+        </form>
+        <br><br>
+        <center>
+            <div>
+                <input type="checkbox" id="remember">
+                <label for="remember" style="font-size: 20px;">Remember me</label>
+                <br><br>
+               <input onclick="check()" class="bu" type="button" value="Login">
+               <br>
+                <h4 onclick="Forget()" style="font-size: 23px;">Forget Password ?</h4>
+                <h4 style="font-size: 23px;">Don't have an account?</h4>
+               <input onclick="regis()" class="bu" type="button" value="Register">
+            </div>
+        </center>
+    </div>
+</center>
+</body>
+</htm

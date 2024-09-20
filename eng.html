@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnglishMovies</title>
+    <link rel="icon" href="https://icon-library.com/images/movies-icon-png/movies-icon-png-29.jpg">
+    <link rel="stylesheet" href="eng.css">
+    <script>
+        function movies(){
+                var choice = document.getElementById("sp").value
+                if (choice=='English'){
+                         window.location.href="http://127.0.0.1:5501/English/eng.html"
+                }
+                else if (choice=='Tamil'){
+                       window.location.href="http://127.0.0.1:5501/Movies.html"
+                }
+                else if (choice=='Malayalam'){
+                        window.location.href="http://127.0.0.1:5501/Malayalam/Malayalam.html"
+                }
+        }
+        function back(){
+                window.location.href="../Welcome.html"
+        }
+    </script>
+</head>
+<body>
+<div>
+  <div style="display:flex;justify-content: space-between;margin-top: 15px;">
+          <div onclick="back()" class="back" style="display:flex;flex-wrap:wrap;justify-content:pace-around;">
+                 <h1 id="back" class="back" style="color: aliceblue;">⬅Back</h1>
+           </div>
+           <div>
+        <select name="" id="sp" onchange="movies()">
+                <option>English</option>
+                <option>Tamil</option>
+                <option>Malayalam</option>
+        </select>
+         </div>
+    </div>
+    <h1>Latest Releases</h1>
+    <div class="LR">
+            <div class="pho"><a href="../English/ELR/HOD.html"><img class="pho" src="../English/Eim/HOD.jpg" alt="House of Dragons" ></a></div>
+            <div class="pho"><a href="../English/ELR/damsel.html"><img class="pho" src="../English/Eim/damsel.jpg" alt="dansel" ></a></div>
+            <div class="pho"><a href="../English/ELR/dune2.html"><img class="pho" src="../English/Eim/dune2.jpg" alt="dune2"></a></div>
+            <div class="pho"><a href="../English/ELR/beekeeper.html"><img class="pho" src="../English/Eim/beekeeper.jpg" alt="beekeeper"></a></div>
+            <div class="pho"><a href="../English/ELR/hulk.html"><img class="pho" src="../English/Eim/hulk.jpg" alt="hulk"></a></div>
+    </div>
+    <h1>Non Fiction Shows</h1>
+    <div class="NF">
+            <div class="pho"><a href="../English/ENF/SH.html"><img class="pho" src="../English/Eim/SH.png" alt="KPy"></a></div>
+            <div class="pho"><a href="../\/English/ENF/Ellen.html"><img class="pho" src="../English/Eim/Ellen.jpeg" alt="Neya Nana"></a></div>
+            <div class="pho"><a href="../English/ENF/Morning.html"><img class="pho" src="../English/Eim/Morning.jpg" alt="Start Music"></a></div>
+            <div class="pho"><a href="../English/ENF/bgt.html"><img class="pho" src="../English/Eim/BGT.jpg" alt="Adhu idhu edhu"></a></div>
+            <div class="pho"><a href="../English/ENF/ibd.html"><img class="pho" src="../English/Eim/IBD.jpg" alt="CWC"></a></div>
+    </div>
+    <h1>Web Series</h1>
+    <div class="FF">
+            <div class="pho"><a href="../English/EWeb/Stranger.html"><img class="pho" src="../English/Eim/ST.jpg" alt="Stranger Things"></a></div>
+            <div class="pho"><a href="../English/EWeb/HOD.html"><img class="pho" src="../English/Eim/HOD.jpg" alt="House Of Dragons"></a></div>
+            <div class="pho"><a href="../English/EWeb/Wednesday.html"><img class="pho" src="../English/Eim/Wednesday.jpg" alt="Wednesday"></a></div>
+            <div class="pho"><a href="../English/EWeb/dark.html"><img class="pho" src="../English/Eim/dark.png" alt="Dark"></a></div>
+            <div class="pho"><a href="../English/EWeb/got.html"><img class="pho" src="../English/Eim/gott.jpg" alt="Game of Thrones"></a></div>
+    </div>
+    <h1>SpotStar Specials</h1>
+    <div class="SS">
+            <div class="pho"><a href="../English/ESS/CCF.html"><img class="pho" src="../English/Eim/CCF.jpg" alt="charlie and the chocolate factory"></a></div>
+            <div class="pho"><a href="../English/ESS/Spider.html"><img class="pho" src="../English/Eim/Spider.jpg" alt="upk"></a></div>
+            <div class="pho"><a href="../English/ESS/Captain.html"><img class="pho" src="../English/Eim/Captain.jpg" alt="HB"></a></div>
+            <div class="pho"><a href="../English/ESS/BDO.html"><img class="pho" src="../English/Eim/BDO.jpg" alt="cs"></a></div>
+            <div class="pho"><a href="../English/ESS/Crown.html"><img class="pho" src="../English/Eim/The crown.jpeg" alt="NS"></a></div>
+    </div>
+    <h1>Clasic Love Story</h1>
+    <div class="CLS">
+            <div class="pho"><a href="../English/ECLS/BAB.html"> <img class="pho" src="../English/Eim/BAB.jpg" alt="Sita Raman"></a></div>
+            <div class="pho"><a href="../English/ECLS/MBY.html"><img class="pho" src="../English/Eim/MBY.jpg" alt="KKP"></a></div>
+            <div class="pho"><a href="../English/ECLS/Titanic.html"><img class="pho" src="../English/Eim/Titanic.jpg" alt="Irugapattru"></a></div>
+            <div class="pho"><a href="../English/ECLS/WP.html"><img class="pho" src="../English/Eim/WP.jpg" alt="Good Night"></a></div>
+            <div class="pho"><a href="../English/ECLS/it.html"><img class="pho" src="../English/Eim/it.jpg" alt="Hi Nana"></a></div>
+    </div>
+    <h1>Horror Movies</h1>
+    <div class="HM">
+            <div class="pho"><a href="../English/EHM/nun.html"><img class="pho" src="../English/Eim/nun.jpg" alt="nun"></a></div>
+            <div class="pho"><a href="../English/EHM/conjuring.html"><img class="pho" src="../English/Eim/conjuring.jpg" alt="conjuring"></a></div>
+            <div class="pho"><a href="../English/EHM/grudge.html"><img class="pho" src="../English/Eim/grudge.jpg" alt="grudge"></a></div>
+            <div class="pho"><a href="../English/EHM/The Mary.html"><img class="pho" src="../English/Eim/the mare.jpg" alt="The Mary"></a></div>
+            <div class="pho"><a href="../English/EHM/the wrong.html"><img class="pho" src="../English/Eim/wrong house.jpg" alt="The Wrong House"></a></div>
+    </div>
+    <h1>Popular in Comedy</h1>
+    <div class="CM">
+            <div class="pho"><a href="../English/ECM/Sl.html"><img class="pho" src="../English/Eim/SL.jpg" alt="SL"></a></div>
+            <div class="pho"><a href="../English/ECM/roby.html"><img class="pho" src="../English/Eim/roby.jpg" alt="roby"></a></div>
+            <div class="pho"><a href="../English/ECM/cats.html"><img class="pho" src="../English/Eim/cats.jpg" alt="cats"></a></div>
+            <div class="pho"><a href="../English/ECM/DDC.html"><img class="pho" src="../English/Eim/DDC.jpg" alt="kalakalappu" ></a></div>
+            <div class="pho"><a href="../English/ECM/G-force.html"><img class="pho" src="../English/Eim/G-Force.jpg" alt="valavanukum pulum ayudham"></a></div>
+    </div>
+    <h1>Disney Movies</h1>
+    <div class="DM">
+            <div class="pho"><a href="../English/Eng Disney/GD.html"><img class="pho" src="../images/GD.jpg" alt="Good dinosaur"></a></div>
+            <div class="pho"><a href="../English/Eng Disney/toy.html"><img class="pho" src="../images/toy.jpg" alt="Toy Story"></a></div>
+            <div class="pho"><a href="../English/Eng Disney/tangled.html"><img class="pho" src="../images/snow.jpg" alt="Tangled"></a></div>
+            <div class="pho"><a href="../English/Eng Disney/Smurfs.html"><img class="pho" src="../images/smu.jpg" alt="Smurfs"></a></div>
+            <div class="pho"><a href="../English/Eng Disney/baby.html"><img class="pho" src="../images/baby.jpeg" alt="Baby Boss"></a></div>
+    </div>
+</div>
+</body>
+</html>
