@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.back{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 20px;
+    height: 20px;
+    transition-duration: 1s;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+}
+.back:hover{
+    transform:scale(1.3);
+    z-index:2;
+    text-decoration: solid;
+    filter: drop-shadow(5px 5px 8px orangered);
+}
+#sp{
+    display: flex;
+    margin-right: 50px;
+    height: 25px;
+    width: 150px;
+    color: plum;
+    background-color: black;
+    font-size: 20px;
+}
+body{
+    background-color: black;
+}
+h1{
+    color: plum;
+    font-size: 40px;
+}
+.pho{
+    padding-right: 30px;
+    width: 400px;
+    height: 400px;
+    transition-duration: 1s;
+    cursor: pointer;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+}
+.pho:hover{
+    transform:scale(1.1);
+    z-index:2;
+}
+.LR{
+   display: flex;
+   overflow-x: auto;
+}
+.LR::-webkit-scrollbar{
+        width: 0px;
+}
+div.LR img {
+    padding: 10px;
+}
+.NF{
+    display: flex;
+    overflow-x: auto;
+ }
+ .NF::-webkit-scrollbar{
+         width: 0px;
+ }
+div.NF img {
+     padding: 10px;
+ }
+ .FF{
+    display: flex;
+    overflow-x: auto;
+ }
+ .FF::-webkit-scrollbar{
+         width: 0px;
+ }
+div.FF img {
+     padding: 10px;
+ }
+ .FF{
+    display: flex;
+    overflow-x: auto;
+ }
+ .FF::-webkit-scrollbar{
+         width: 0px;
+ }
+div.FF img {
+     padding: 10px;
+ }
+ .SS{
+    display: flex;
+    overflow-x: auto;
+ }
+ .SS::-webkit-scrollbar{
+         width: 0px;
+ }
+div.SS img {
+     padding: 10px;
+ }
+ .CLS{
+    display: flex;
+    overflow-x: auto;
+ }
+ .CLS::-webkit-scrollbar{
+         width: 0px;
+ }
+div.CLS img {
+     padding: 10px;
+ }
+ .HM{
+    display: flex;
+    overflow-x: auto;
+ }
+ .HM::-webkit-scrollbar{
+         width: 0px;
+ }
+div.HM img {
+     padding: 10px;
+ }
+ .CM{
+    display: flex;
+    overflow-x: auto;
+ }
+ .CM::-webkit-scrollbar{
+         width: 0px;
+ }
+div.CM img {
+     padding: 10px;
+ }
+ .DM{
+    display: flex;
+    overflow-x: auto;
+ }
+ .DM::-webkit-scrollbar{
+         width: 0px;
+ }
+div.DM img {
+     padding: 10px;
+ }
